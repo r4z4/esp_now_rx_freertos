@@ -33,6 +33,7 @@ struct HubData {
     measurement: i32,
 }
 
+// FreeRTOS Implementation
 // Static variables for received data (used in callback)
 static RECEIVED_TOPIC: AtomicI32 = AtomicI32::new(-1);
 static RECEIVED_MEASUREMENT: AtomicI32 = AtomicI32::new(0);
